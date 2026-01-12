@@ -1,0 +1,594 @@
+/* Team.css */
+.team {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.team h2 {
+  
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1a202c;
+    text-align: center;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 16px;
+  
+}
+
+.team label {
+  display: block;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.team input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #bdc3c7;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.team input[type="text"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.team ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.team li {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  transition: transform 0.2s ease;
+}
+
+.team li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.team input[type="checkbox"] {
+  margin-right: 0.8rem;
+  transform: scale(1.2);
+}
+
+.team select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 2px solid #bdc3c7;
+  background: white;
+  margin: 1rem 0;
+}
+
+/* Changed create team button to blue */
+.team button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 600;
+}
+
+.team button:hover {
+  background: #2980b9;
+}
+
+.team-list {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #ecf0f1;
+}
+
+.team-list li {
+  position: relative;
+  padding-right: 2rem;
+}
+
+/* Changed delete button to red */
+.team-list button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.2rem 0.5rem;
+  background: #e74c3c;
+}
+
+.team-list button:hover {
+  background: #c0392b;
+}
+
+.team-meta {
+  color: #7f8c8d;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .team {
+    padding: 1rem;
+  }
+  
+  .team ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Keeping all other existing styles below exactly as they were */
+.team {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.team h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.team h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.team input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.team select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Keeping the create team button blue */
+.team button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.team button:hover {
+  background-color: #2980b9;
+}
+
+.team button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.team ul {
+  list-style: none;
+  padding: 0;
+}
+
+.team li {
+  padding: 5px 0;
+}
+
+.team-list {
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.team-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.team-details p {
+  margin: 5px 0;
+}
+
+.no-members-message {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.no-members-message ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.current-user-info {
+  background-color: #e9f7ef;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* New styles for member selection and tooltips */
+.member-selection-list {
+  margin-bottom: 20px;
+}
+
+.member-info input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.team-info-item {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #eee;
+}
+
+.team-info-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.project-list {
+  padding-left: 15px !important;
+  margin-top: 5px;
+}
+
+.priority-high {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.priority-medium {
+  color: #ff9800;
+}
+
+.priority-low {
+  color: #4caf50;
+}
+
+/* Tooltip styles remain unchanged */
+.user-team-tooltip {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  margin-left: 15px;
+}
+
+.user-team-tooltip:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #ddd;
+}
+
+.member-info {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.member-list-item {
+  position: relative;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  min-height: 40px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .user-team-tooltip {
+    left: 0;
+    top: 100%;
+    transform: none;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .user-team-tooltip:before {
+    left: 20px;
+    top: -10px;
+    transform: none;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ddd;
+    border-top: none;
+  }
+}
+
+/* Team container styles remain unchanged */
+.team-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.team-heading {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.team-member {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #777;
+  font-weight: 500;
+}
+
+.team-member .social-icons {
+  margin-top: 15px;
+}
+
+.team-member .social-icons a {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 1.2rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.team-member .social-icons a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .team-member {
+      padding: 15px;
+  }
+}
+/* Member selection dropdown styling */
+.member-selection {
+  margin-bottom: 1.5rem;
+}
+
+.member-dropdown-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.member-dropdown {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  background-color: white;
+  font-size: 1rem;
+  transition: border-color var(--transition-speed);
+}
+
+.member-dropdown:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.add-member-btn {
+  padding: 0.75rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color var(--transition-speed);
+}
+
+.add-member-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.add-member-btn:disabled {
+  background-color: var(--secondary-color);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Selected members list styling */
+.selected-members {
+  background-color: var(--background-dark);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.selected-members h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.selected-members-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selected-member-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.selected-member-item .member-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: white;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border-color);
+}
+
+.remove-member-btn {
+  background-color: var(--danger-color);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.remove-member-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Enhanced tooltip styling */
+.user-team-tooltip {
+  position: absolute;
+  right: -320px;
+  top: 0;
+  width: 300px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+}
+
+.team-info-item {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.team-info-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.project-list {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+/* Priority styling */
+.priority-1 {
+  color: var(--success-color);
+}
+
+.priority-2 {
+  color: var(--primary-color);
+}
+
+.priority-3 {
+  color: var(--warning-color);
+}
+
+.priority-4, .priority-5 {
+  color: var(--danger-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .member-dropdown-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .add-member-btn {
+    width: 100%;
+  }
+  
+  .user-team-tooltip {
+    position: static;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
